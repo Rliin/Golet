@@ -1,0 +1,131 @@
+.header {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+  /*position:fixed;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
+}
+
+.left-section {
+  margin-top: 5px;
+  margin-left: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.golet-logo:hover,
+.golet-text:hover {
+  opacity: 0.8;
+}
+
+.golet-logo {
+  height: 40px;
+  cursor:pointer;
+}
+
+.golet-text {
+  margin-left: 15px;
+  font-weight: 800;
+  font-size: 20px;
+  cursor:pointer;
+}
+
+.golet-text:link, .golet-text:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  margin-top: 60px;
+  flex: 1;
+  height: 46px;
+  padding-left: 15px;
+  font-size: 16px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 26px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+.right-section {
+  width: 200px;
+  margin-right: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.sell-button {
+  margin-top: 60px;
+  height: 46px;
+  color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border-width: 1px;
+  /*background-color: #9CC5A1;*/
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: opacity 0.15s;
+  transition: font-size 0.15s;
+  transition: padding 0.15s;
+}
+
+.sell-button:hover{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 27px;
+  padding-right: 27px;
+  transition: padding 0.15s;
+}
+
+.sell-button:hover .sell-button-text,
+.sell-button:hover .sell-icon {
+  font-weight: bold;
+  opacity: 0.8;
+  transition: opacity 0.15s;
+  transition: font-size 0.15s;
+}
+
+.sell-button:hover .sell-button-text {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sell-icon {
+  height: 25px;
+}
+
+.sell-button-text {
+  margin-left: 8px;
+  font-size: 15px;
+}

@@ -1,0 +1,42 @@
+.sidebar {
+  padding-top: 20px;
+  padding-bottom: 1px;
+  position: fixed;
+  right: 60px;
+  top: 120px;
+  width: 80px;
+  background: white;
+  border-radius: 20px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
+  border-right-style: solid;
+  border-right-color: rgb(228, 228, 228);
+  z-index: 200;
+}
+
+.icon{
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.side-buttons {
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+  transition: opacity 0.15s;
+  transition: font-size 0.15s;
+  transition: margin-bottom 0.15s;
+}
+
+.side-buttons:hover {
+  opacity: 0.8;
+  font-size: 16px;
+  margin-bottom: 29px;
+}
