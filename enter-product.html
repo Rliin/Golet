@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlan Ver</title>
+    <link rel="stylesheet" href="styles/enter-product.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+  <header class="header">
+    <div class="left-section">
+      <div>
+        <img class="golet-logo" src="visuals/icons/sculpture.png">
+      </div>
+      <a href="index.html" class="golet-text">Gölet</a>
+    </div>
+    <div class="middle-section">
+    </div>
+    <div class="right-section">
+      <a href="deneme.html">
+        <button class="sell-button">
+          <img class="sell-icon" src="visuals/icons/camera.svg">
+          <div class="sell-button-text">Sell</div>
+        </button>
+      </a>
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <a href="index.html">
+      <div class="side-buttons">
+        <img class="icon" src="visuals/icons/heart.svg">
+        <div>Golet</div>
+      </div>
+    </a>
+    
+    <a href="chat.html" class="link-buttons">
+      <div class="side-buttons">
+        <img class="icon" src="visuals/icons/comment-black.svg">
+        <div>Chat</div>
+      </div>
+    </a>
+      
+    <div class="side-buttons">
+      <img class="icon" src="visuals/icons/user.svg">
+      <div>Account</div>
+    </div>
+
+    <div class="side-buttons">
+      <img class="icon" src="visuals/icons/ballot.svg">
+      <div>Sell</div>
+    </div>
+
+  </nav>
+    <div class="container">
+        <header class="header">
+            <h1>Post an Ad</h1>
+        </header>
+        <form class="form">
+            <div class="form-group">
+                <label for="category">Chosen Category</label>
+                <div class="category-selector">
+                    <span>Gaming > Keyboards</span>
+                    <button class="change-btn">Değiştir</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="title">Ad Title *</label>
+                <input type="text" id="title" placeholder="Başlık girin" maxlength="70">
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price *</label>
+                <input type="text" id="price" placeholder="Fiyat giriniz" maxlength="10">
+            </div>
+
+            <div class="form-group">
+                <label for="description">About this item *</label>
+                <textarea id="description" placeholder="Durum, özellik ve satma nedeni gibi bilgileri ekle" maxlength="1450"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location *</label>
+                <input type="text" id="title" placeholder="Location of the product" maxlength="300">
+            </div>
+
+            <div class="form-group">
+                <label for="contact">Contact Information</label>
+                <div class="contact-info">
+                    <span>BCG Gaming Electronics</span>
+                    <input type="text" id="phone" placeholder="Bir telefon numarası girin">
+                </div>
+            </div>
+
+            <button class="submit-btn">Publish</button>
+        </form>
+    </div>
+
+    <footer>
+      <div>
+        <img class="golet-logo-footer" src="visuals/icons/sculpture.png">
+        <div class="golet-text-footer">Golet</div>
+      </div>
+      <div class="footer-buttons">
+        <div class="footer-button">Home</div>
+        <div class="footer-button">About</div>
+        <div class="footer-button">Conctact Us</div>
+        <div class="footer-button">Our Team</div>
+      </div>
+      <div class="project-info">
+        Golet is a project currently in development by Burkay Çetinkaya and Kerem Aydın
+      </div>
+    </footer>
+</body>
+</html>

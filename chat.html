@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golet MessageKB</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles/chat.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <!-- Firebase Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="left-section">
+      <div>
+        <img class="golet-logo" src="visuals/icons/sculpture.png">
+      </div>
+      <a href="index.html" class="golet-text">Gölet</a>
+    </div>
+    <div class="middle-section">
+      <!--<input class="search-bar" type="text" placeholder="Search Golet"> -->
+    </div>
+    <div class="right-section">
+      <a href="deneme.html">
+        <button class="sell-button">
+          <img class="sell-icon" src="visuals/icons/camera.svg">
+          <div class="sell-button-text">Sell</div>
+        </button>
+      </a>
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <a href="index.html">
+      <div class="side-buttons">
+        <img class="icon" src="visuals/icons/heart.svg">
+        <div>Golet</div>
+      </div>
+    </a>
+    
+    <a href="chat.html" class="link-buttons">
+      <div class="side-buttons">
+        <img class="icon" src="visuals/icons/comment-black.svg">
+        <div>Chat</div>
+      </div>
+    </a>
+      
+    <div class="side-buttons">
+      <img class="icon" src="visuals/icons/user.svg">
+      <div>Account</div>
+    </div>
+    <a href="enter-product.html">
+      <div class="side-buttons">
+        <img class="icon" src="visuals/icons/ballot.svg">
+        <div>Sell</div>
+      </div>
+    </a>
+
+  </nav>
+  <!-- Giriş ve Kayıt -->
+  <div id="site-container">
+  
+  <div id="auth-container">
+    <div id="login-form">
+      <h2>Giriş Yap</h2>
+      <input type="email" id="login-email" placeholder="E-posta">
+      <input type="password" id="login-password" placeholder="Şifre">
+      <button id="login-button">Giriş Yap</button>
+      <div id="google-login">
+        <!--  <h2>Alternatif:</h2> -->
+        <button id="google-button" class="icon-button">
+          <i class="fab fa-google"></i> Google ile Giriş Yap
+        </button>
+      </div>
+    </div>
+    <div id="register-form">
+      <h2>Kayıt Ol</h2>
+      <input type="text" id="register-name" placeholder="İsim">
+      <input type="email" id="register-email" placeholder="E-posta">
+      <input type="password" id="register-password" placeholder="Şifre">
+      <button id="register-button">Kayıt Ol</button>
+    </div>
+  </div>
+
+  <!-- Mesajlaşma -->
+  <div id="chat-container" style="display: none;">
+    <div id="user-settings">
+      <span id="current-user-name"></span>
+      <input type="text" id="new-user-name" placeholder="Yeni isim gir">
+      <button id="change-name-button">İsmi değiştir</button>
+      <button id="logout-button" class="icon-button">
+        <i class="fas fa-sign-out-alt"></i> Çıkış Yap
+      </button>
+    </div>
+    <div id="messages"></div>
+    <div id="input-area">
+      <input type="text" id="message-input" placeholder="Mesajınızı yazın...">
+      <button id="send-button">Gönder</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>
+    <img class="golet-logo-footer" src="visuals/icons/sculpture.png">
+    <div class="golet-text-footer">Golet</div>
+  </div>
+  <div class="footer-buttons">
+    <div class="footer-button">Home</div>
+    <div class="footer-button">About</div>
+    <div class="footer-button">Conctact Us</div>
+    <div class="footer-button">Our Team</div>
+  </div>
+  <div class="project-info">
+    Golet is a project currently in development by Burkay Çetinkaya and Kerem Aydın
+  </div>
+</footer>
+
+  <!-- JavaScript -->
+  <script src="scripts/auth.js"></script>
+  <script src="scripts/chat.js"></script>
+</body>
+</html>
