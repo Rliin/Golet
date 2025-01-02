@@ -1,0 +1,221 @@
+/* Genel Stil */
+/*body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #f9f9f9, #f9f9f9);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}*/
+
+#site-container {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #f9f9f9, #f9f9f9);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#auth-container {
+  width: 80%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  color: #333;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+#login-form, #register-form {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+#login-form:last-child, #register-form:last-child {
+  border-right: none;
+}
+
+#chat-container {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Giriş ve Kayıt */
+#auth-container h2 {
+  text-align: center;
+  color: #1e3c72;
+  margin-bottom: 20px;
+}
+
+
+/*#auth-container div > div {
+  width: 48%;  İki sütun arasında eşit boşluk
+}*/
+
+#auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#auth-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#auth-container button:hover {
+  background: #2a5298;
+}
+
+/* Google ile Giriş */
+#google-login {
+  width: 100%;
+  text-align: center;
+}
+
+#google-button {
+  background-color: #db4437 !important; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#google-button i {
+  font-size: 18px;
+}
+
+#google-button:hover {
+  background-color: #c33d2e;
+}
+
+/* Chat Ekranı */
+#chat-container {
+  padding: 20px;
+}
+
+#user-settings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#user-settings span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#user-settings input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#user-settings button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #e63946;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#user-settings button:hover {
+  background: #d62839;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#messages {
+  flex: 1;
+  padding: 10px;
+  background: #f4f4f4;
+  border-radius: 5px;
+  overflow-y: auto;
+  max-height: 300px;
+  margin-bottom: 10px;
+}
+
+.message {
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #e3f2fd;
+  color: #333;
+}
+
+#input-area {
+  display: flex;
+  gap: 10px;
+}
+
+#message-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#send-button {
+  padding: 10px 20px;
+  border: none;
+  background: #1e88e5;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background: #1565c0;
+}
+
+.title-c {
+  color: black;
+}

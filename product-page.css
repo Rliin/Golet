@@ -1,0 +1,114 @@
+main {
+  margin-bottom: 100px;
+}
+
+.product-title-price {
+  margin-top: 50px;
+  margin-left: 120px;
+  margin-right: 200px;
+  margin-bottom: 0px;
+  border-radius: 25px;
+  padding-top: 1px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.15);
+  background-color: white;
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+  position: relative;
+}
+
+.product-title {
+  margin-top: 15px;
+}
+
+.product-price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.product-image {
+  /*: 5px;*/
+  margin-left: 120px;
+  margin-top: 20px;
+  margin-right: 200px;
+  height: 100%;
+  border-radius: 25px;
+  margin-bottom: 0px;
+  max-height: 560px;
+  object-position: center;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.product-image-about {
+  display: grid;
+  grid-template-columns: 700px 1fr;
+  column-gap: 20px;
+}
+
+@media (max-width:1200px) {
+  .product-image-about{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:1200px) {
+  .about{
+    margin-left: 120px;
+  }
+}
+
+@media (min-width:1201px){
+  .product-image-about {
+    grid-template-columns: 700px 1fr;
+  }
+}
+
+.about {
+  position: relative;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.15);
+  background-color: white;
+  margin-right: 200px;
+  padding-left: 15px;
+  border-radius: 25px;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.about-title {
+  margin-top: 13px;
+  font-size: 20px;
+  font-weight: bold;
+  border-width: 0px;
+  border-style: solid;
+}
+
+.button-contact {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  
+  color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  background-color: #fcbf49;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: opacity 0.15s;
+  transition: font-weight 0.15s;
+  transition-property: transform 10s;
+}
+
+.button-contact:hover {
+  font-weight: bold;
+  opacity: 0.8;
+  transform: scale(1.02);
+}

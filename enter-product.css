@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 14px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  background-color: #49A078;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #49A078;
+}
+
+.change-btn,
+.location-btn {
+  background: none;
+  color: #49A078;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.change-btn:hover,
+.location-btn:hover {
+  color: #49A078;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submit-btn {
+  align-self: center;
+  width: 100%;
+  font-size: 16px;
+}
+
+.seller-profile-picture {
+  width: 100%;
+  border-radius: 35px;
+}
+
+.product-page-info-card {
+  margin-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  border-width: 0px;
+  border-left-width: 1px;
+  border-style: solid;
+  border-color: gray;
+}
