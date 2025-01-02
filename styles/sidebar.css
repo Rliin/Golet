@@ -35,6 +35,11 @@
   transition: margin-bottom 0.15s;
 }
 
+.link-buttons:link, .link-buttons:visited {
+  color: black;
+  text-decoration: none;
+}
+
 .side-buttons:hover {
   opacity: 0.8;
   font-size: 16px;
